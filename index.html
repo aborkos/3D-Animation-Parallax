@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Animation Parallax</title>
+    <link rel="stylesheet" href="../3D Animation mousemove parallax/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h2 class="name">Product Name</h2>
+            <a href="#" class="buy">Buy Now</a>
+            <div class="circle"></div>
+            <img src="../3D Animation mousemove parallax/shoes.png" alt="shoes" class="product">
+        </div>
+    </div>
+
+    <script src="../3D Animation mousemove parallax/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".box"), {
+            max: 25,
+            speed: 400
+        });
+
+    </script>
+</body>
+
+</html>
